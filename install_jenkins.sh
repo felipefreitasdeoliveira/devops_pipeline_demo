@@ -1,4 +1,9 @@
 #!bash
+
+# Programas
+yum -y install git maven docker 
+
+# Jenkins
 sudo wget -O /etc/yum.repos.d/jenkins.repo \
     https://pkg.jenkins.io/redhat-stable/jenkins.repo
 sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
@@ -10,3 +15,5 @@ sudo systemctl start jenkins
 sudo systemctl status jenkins
 
 
+# Programas
+yum -y install git maven docker
