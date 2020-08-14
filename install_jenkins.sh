@@ -1,7 +1,7 @@
-#!bash
+!#bash
 
 # Programas
-yum -y install git maven docker 
+yum -y install git maven docker vim
 
 # Jenkins
 sudo wget -O /etc/yum.repos.d/jenkins.repo \
