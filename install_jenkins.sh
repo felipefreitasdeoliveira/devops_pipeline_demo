@@ -1,7 +1,7 @@
-!#bash
+#!/bin/bash
 
 # Programas
-yum -y install git maven docker vim
+yum -y install git maven docker vim telent curl
 
 # Jenkins
 sudo wget -O /etc/yum.repos.d/jenkins.repo \
@@ -10,10 +10,7 @@ sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
 sudo yum upgrade
 sudo yum install jenkins java-1.8.0-openjdk-devel
 
+
 sudo systemctl start jenkins
 
-sudo systemctl status jenkins
-
-
-# Programas
-yum -y install git maven docker
+sudo systemctl status jenkins 
