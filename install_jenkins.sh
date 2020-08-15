@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Programas
-yum -y install git maven docker vim telent curl
+yum -y install git maven docker vim telent curl wget 
 
 # Jenkins
 sudo wget -O /etc/yum.repos.d/jenkins.repo \
