@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Programas
-yum -y install git maven docker vim telent curl wget 
+sudo yum -y update && upgrade
+sudo yum -y install git maven docker vim telent curl wget 
 
 # Jenkins
 sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
