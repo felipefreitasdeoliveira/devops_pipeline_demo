@@ -16,7 +16,8 @@ sudo setenforce 0 # Else disable SELINUX in /etc/sysconfig/selinux
 
 sudo systemctl start docker
 sudo systemctl start jenkins
-sudo reboot
-
+sudo systemctl enable docker
+sudo systemctl enable jenkins
 sudo systemctl status jenkins 
 sudo systemctl status docker 
+sudo reboot
